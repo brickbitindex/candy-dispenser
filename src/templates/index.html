@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=1,user-scalable=no">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Candy</title>
+  <link href="https://cdn.bootcss.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet">
+  <script src="https://cdn.bootcss.com/jquery/3.3.1/jquery.min.js"></script>
+</head>
+<body>
+  <div id="main">
+    <p id="noinvitep">
+      1. 输入自己的真实ETH地址<br/>
+      2. 点击[生成邀请地址]按钮<br/>
+      3. 分享邀请地址
+    </p>
+    <p id="invitep" style="display: none">
+      1. 输入自己的真实ETH地址<br/>
+      2. 点击[生成邀请地址及TG邀请命令]按钮<br/>
+      3. 进入TG群，输入邀请命令<br/>
+      4. 你也可以分享自己的邀请地址给别人哦
+    </p>
+    <div id="inviteArea" style="display: none">
+      <div class="card card1">
+        <div class="card-header">您将接受来自如下ETH地址的邀请</div>
+        <div class="card-body" id="inviteAddress"></div>
+      </div>
+    </div>
+    <div id="inputArea">
+      <div class="form-group">
+        <label for="ethAddress">ETH地址</label>
+        <input type="text" class="form-control" id="ethAddress" aria-describedby="ethAddress" placeholder="请输入ETH地址">
+        <small class="form-text text-muted">请保证输入正确的ETH地址</small>
+      </div>
+      <button id="getCode" class="btn btn-primary btn-block">生成邀请地址</button>
+    </div>
+    <div id="resultArea" style="display: none;">
+      <div class="card card1">
+        <div class="card-header">您的ETH地址是</div>
+        <div class="card-body" id="ethAddressResult"></div>
+      </div>
+      <div class="card">
+        <div class="card-header">您的邀请链接是</div>
+        <div class="card-body">
+          <p id="codeResult"></p>
+          <a class="btn btn-primary code-btn" id="copyCode">复制邀请地址</a>
+        </div>
+      </div>
+      <div class="card" id="commandCard" style="display: none">
+        <div class="card-header">您的邀请命令是</div>
+        <div class="card-body">
+          <p id="commandResult"></p>
+          <a class="btn btn-primary code-btn" id="copyCommand">复制邀请命令</a>
+        </div>
+      </div>
+      <!-- <button style="margin-top: 16px;" id="test" class="btn btn-primary btn-block">测试：删除LocalStorage</button> -->
+    </div>
+  </div>
+</body>
+</html>
