@@ -67,6 +67,7 @@
     "extract-text-webpack-plugin": "^1.0.1",
     "gpu.js": "^1.0.0",
     "gravatar-api": "^1.4.0",
+    "html-loader": "^0.5.5",
     "marked": "^0.3.6",
     "paralleljs": "^0.2.1",
     "path": "^0.12.7",

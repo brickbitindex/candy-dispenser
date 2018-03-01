@@ -16,7 +16,7 @@ export default function () {
           $('#noinvitep').css('display', 'none');
           $('#invitep').css('display', 'block');
           $('#inviteAddress').html(data.eth);
-          $('#getCode').html('生成邀请地址及TG邀请命令');
+          $('#getCode').html('获取邀请链接及TG邀请命令');
           window.__Q__ = q;
         }
       });
